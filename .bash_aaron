@@ -1,0 +1,14 @@
+#
+# ~/.bash_aaron
+# My bash envirronment
+#
+
+# aliases
+alias ll='ls -la'
+alias llt='ls -lAht'
+
+# source autojump
+source /etc/profile.d/autojump.bash
+
+# dotfile git bare repository
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
