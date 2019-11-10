@@ -1,16 +1,19 @@
 # dotfiles
 
-This repository contain the dotfiles for my linux configuration.
-The setup follows this [structure](https://news.ycombinator.com/item?id=11071754).
+This repository contain the dotfiles for my linux configuration. The setup follows the structure described [here](https://www.atlassian.com/git/tutorials/dotfiles).
 
-To clone, use:
+To setup this configuration in a new system, use:
 
 ```bash
-git clone --separate-git-dir=$HOME.myconf /path/to/repo $HOME/myconf-tmp
-cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules
-rm -r ~/myconf-tmp/
-alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+cd $HOME
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+echo ".cfg" >> .gitignore # for recursion problems
+git clone --bare https://github.com/2ar0n/dotfiles.git $HOME/.cfg
+config checkout
+config config --local status.showUntrackedFiles no
 ```
+
+If the `config checkout` step fails, check remove any existing files in you `$HOME` directory that would be overwritten by a file in the repo.
 
 And add this to the end of the `.bashrc`:
 
