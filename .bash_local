@@ -13,7 +13,7 @@ alias ll='ls -la'
 alias llt='ls -lAht'
 
 # source autojump
-source /etc/profile.d/autojump.bash
+source /usr/share/autojump/autojump.bash
 
 # dotfile git bare repository
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
