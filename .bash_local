@@ -1,7 +1,4 @@
-#
-# ~/.bash_aaron
-# My bash envirronment
-#
+# ~/.bash_local
 
 # source bash ps1 file
 if [ -f ~/.bash_ps1 ];then
@@ -10,7 +7,6 @@ fi
 
 # aliases
 alias ll='ls -la'
-alias llt='ls -lAht'
 
 # source autojump
 source /usr/share/autojump/autojump.bash
