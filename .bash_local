@@ -8,5 +8,8 @@ fi
 # aliases
 alias ll='ls -la'
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # dotfile git bare repository
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
