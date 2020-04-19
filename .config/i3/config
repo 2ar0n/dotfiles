@@ -25,7 +25,7 @@ font xft:Noto Sans 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -79,14 +79,14 @@ bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
 # Workspace names
-set $ws1 1:one
-set $ws2 2:two
-set $ws3 3:three
-set $ws4 4:four
-set $ws5 5:five
-set $ws6 6:six
-set $ws7 7:seven
-set $ws8 8:eight
+set $ws1 one
+set $ws2 two
+set $ws3 three
+set $ws4 four
+set $ws5 five
+set $ws6 six
+set $ws7 seven
+set $ws8 eight
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -172,14 +172,19 @@ exec --no-startup-id firefox
 exec --no-startup-id spotify
 exec --no-startup-id redshift
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/wallpaper.jpg 
+exec_always --no-startup-id feh --randomize --bg-fill $HOME/.config/i3/wallpapers/*
 exec_always --no-startup-id xautolock -time 30 -locker $HOME/.config/i3/scripts/screenlock.bash
+
+exec_always --no-startup-id ff-theme-util
+exec_always --no-startup-id fix_xcursor
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id compton -b
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id pa-applet
+bindsym $mod+Ctrl+m exec pavucontrol
 
 # Open applications on specific workspaces
 assign [class="Firefox"] $ws1
 # Exception for spotify
 for_window [class="Spotify"] move to workspace $ws2
-
-# Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
