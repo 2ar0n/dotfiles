@@ -188,3 +188,9 @@ bindsym $mod+Ctrl+m exec pavucontrol
 assign [class="Firefox"] $ws1
 # Exception for spotify
 for_window [class="Spotify"] move to workspace $ws2
+
+# i3 gaps
+for_window [class=".*"] border pixel 0
+gaps inner 10
+smart_gaps on
+
