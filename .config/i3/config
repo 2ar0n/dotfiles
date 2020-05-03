@@ -13,11 +13,6 @@ new_float normal
 # Hide borders
 hide_edge_borders none
 
-# change borders
-bindsym $mod+u border none
-bindsym $mod+y border pixel 1
-bindsym $mod+n border normal
-
 # Font for window titles. Will also be used by the bar unless a different font is used in the bar {} block below.
 font xft:Noto Sans 10
 
@@ -56,11 +51,6 @@ bindsym $mod+v split v;exec notify-send 'tile vertically'
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
