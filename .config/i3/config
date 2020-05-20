@@ -69,14 +69,14 @@ bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
 # Workspace names
-set $ws1 one
-set $ws2 two
-set $ws3 three
-set $ws4 four
-set $ws5 five
-set $ws6 six
-set $ws7 seven
-set $ws8 eight
+set $ws1 1:one
+set $ws2 2:two
+set $ws3 3:three
+set $ws4 4:four
+set $ws5 5:five
+set $ws6 6:six
+set $ws7 7:seven
+set $ws8 8:eight
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
