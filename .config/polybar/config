@@ -91,7 +91,7 @@ label-indicator-underline = ${colors.secondary}
 [module/filesystem]
 type = internal/fs
 interval = 25
-format-underline = #51ce7b
+format-mounted-underline = ${colors.primary}
 
 mount-0 = /
 
