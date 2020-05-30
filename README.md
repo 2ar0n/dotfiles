@@ -23,3 +23,9 @@ if [ -f ~/.bash_local ];then
     source ~/.bash_local
 fi
 ```
+
+## Dependencies
+
+```bash
+sudo pacman -S firefox spotify redshift polybar python-pywal rofi
+```
