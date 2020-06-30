@@ -9,3 +9,9 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+call plug#begin()
+Plug 'preservim/nerdtree'
+call plug#end()
+
+map <C-n> :NERDTreeToggle<CR>
