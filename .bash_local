@@ -7,8 +7,9 @@ fi
 
 # aliases
 alias ll='ls -la'
+alias vim=nvim
 
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # dotfile git bare repository
