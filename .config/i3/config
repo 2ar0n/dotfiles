@@ -158,12 +158,12 @@ mode "resize" {
 }
 
 # Autostart applications
-exec --no-startup-id firefox
-exec --no-startup-id spotify
-exec --no-startup-id redshift
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id wal -i $HOME/.config/i3/wallpapers/
 exec_always --no-startup-id xautolock -time 30 -locker $HOME/.config/i3/scripts/screenlock.bash
+exec --no-startup-id firefox
+exec --no-startup-id spotify
+exec --no-startup-id redshift
 
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
