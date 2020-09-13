@@ -19,6 +19,7 @@ Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'machakann/vim-highlightedyank'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 map <C-n> :NERDTreeToggle<CR>
