@@ -1,0 +1,9 @@
+[user]
+	email = aaron.lelouvier@protonmail.com
+	name = Aaron Lelouvier
+[pull]
+    rebase = true
+[alias]
+	new = checkout -b
+    st = status
+    ci = commit
