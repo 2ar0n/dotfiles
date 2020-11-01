@@ -162,7 +162,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id wal -i $HOME/.config/i3/wallpapers/
 exec_always --no-startup-id xautolock -time 30 -locker $HOME/.config/i3/scripts/screenlock.bash
 exec --no-startup-id firefox
-exec --no-startup-id spotify
 exec --no-startup-id redshift
 
 exec_always --no-startup-id ff-theme-util
@@ -176,8 +175,6 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Open applications on specific workspaces
 assign [class="Firefox"] $ws1
-# Exception for spotify
-for_window [class="Spotify"] move to workspace $ws2
 
 # i3 gaps
 for_window [class=".*"] border pixel 0
