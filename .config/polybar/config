@@ -52,7 +52,7 @@ font-0 = "Noto Sans:size=11;1"
 font-1 = "Noto Color Emoji:scale=10"
 
 modules-left = i3
-modules-right = fan-speed cpu memory temperature bluetooth-icon filesystem battery date
+modules-right = fan-speed updates-pacman cpu memory temperature bluetooth-icon filesystem battery date
 
 tray-position = right
 tray-padding = 2
@@ -184,6 +184,11 @@ exec = ~/.config/polybar/scripts/bluetooth.sh
 interval = 1
 format-underline = ${colors.primary}
 
+[module/updates-pacman]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-pacman.sh
+interval = 600
+format-underline = ${colors.primary}
 
 [module/memory]
 type = internal/memory
