@@ -8,6 +8,7 @@ fi
 # aliases
 alias ll='ls -la'
 alias vim=nvim
+alias open=xdg-open
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
