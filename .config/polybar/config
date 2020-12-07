@@ -52,7 +52,7 @@ font-0 = "Noto Sans:size=11;1"
 font-1 = "Noto Color Emoji:scale=10"
 
 modules-left = i3
-modules-right = fan-speed updates-pacman cpu memory temperature bluetooth-icon filesystem battery date
+modules-right = updates-pacman battery date
 
 tray-position = right
 tray-padding = 2
