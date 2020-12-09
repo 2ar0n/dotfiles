@@ -10,6 +10,10 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+" smart search for uppercase
+set ignorecase
+set smartcase
+
 " for faster git gutter updates
 set updatetime=100
 
