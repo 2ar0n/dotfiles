@@ -169,13 +169,9 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pa-applet
-bindsym $mod+Ctrl+m exec pavucontrol
-
-# Open applications on specific workspaces
-assign [class="Firefox"] $ws1
+exec --no-startup-id caffeine
 
 # i3 gaps
 for_window [class=".*"] border pixel 0
 gaps inner 10
 #smart_gaps on
-
