@@ -169,7 +169,8 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pa-applet
-exec --no-startup-id caffeine
+exec --no-startup-id caffeine -d &
+exec --no-startup-id protonmail-bridge &
 
 # i3 gaps
 for_window [class=".*"] border pixel 0
