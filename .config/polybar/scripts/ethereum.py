@@ -11,5 +11,5 @@ try:
     if change > 0:
         change = f"+{change}"
     print(f"ETH: {price}€ ({change}%)")
-except ...:
+except Exception as e:
     pass
