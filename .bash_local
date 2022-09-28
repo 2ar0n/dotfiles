@@ -9,6 +9,9 @@ fi
 alias ll='ls -la'
 alias vim=nvim
 alias open=xdg-open
+alias vpn_on='protonvpn-cli c -f'
+alias vpn_off='protonvpn-cli d'
+alias ciao='shutdown now'
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
